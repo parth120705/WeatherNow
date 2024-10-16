@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="/videos/wZB0w7POvY2QDE80Oozk.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="container">
+        <header>
+            <div class="greeting">Hi, User!<br>Good Morning</div>
+            <input type="text" id="search-input" placeholder="Search your location">
+            <button onclick="fetchData()">
+                <span class="button_top"> Button </span>
+              </button>
+            <img src="/public/images/logo.png" alt="logo" class="profile-pic"> <!-- Dummy image -->
+        </header>
+
+        <main>
+            <section class="current-weather">
+                <div class="weather-info">
+                    <p id="city"></p>
+                    <p class="day">Sunday, 04 Aug 2024</p>
+                    <div class="weather-main">
+                        <img src="rainy.png" alt="Weather Icon" class="weather-icon">
+                        <div class="temperature">28°C</div>
+                    </div>
+                    <p class="description">Heavy Rain<br>Feels like 31°C</p>
+                </div>
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <p>Wind Status</p>
+                        <p id="windspeed">7.90 km/h</p>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Humidity</p>
+                        <p id="humidity">85%</p>
+                    </div>
+                    <div class="highlight-card">
+                        <p>UV Index</p>
+                        <p id="uvindex"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Visibility</p>
+                        <p id="visibility">5 km</p>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Sunrise</p>
+                        <p id="sunrise">4:50 AM</p>
+                    </div>
+                    <div class="highlight-card">
+                        <p>Sunset</p>
+                        <p id="sunset">6:45 PM</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <div class="day-card" >
+                    <p>Today</p>
+                    <img src="" alt="Weather Icon">
+                    <p id="today-temp">28°C</p>
+                </div>
+                <div class="day-card">
+                    <p>Tomorrow</p>
+                    <img src="" alt="Weather Icon">
+                    <p id="tom-temp">28°C</p>
+                </div>
+                <div class="day-card">
+                    <p id="day-3"></p>
+                    <img src="" alt="Weather Icon">
+                    <p id="day3-temp"></p>
+                </div>
+                <div class="day-card">
+                    <p id="day-4"></p>
+                    <img src="" alt="Weather Icon">
+                    <p id="day4-temp"></p>
+                </div>
+                
+                
+                
+               
+                
+                
+                
+                <!-- Repeat the forecast card structure for other days -->
+            </section>
+        </main>
+    </div>
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>
